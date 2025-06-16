@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script  src="DOMInteraction.js"></script>
-           
+    <style>
+        
+    </style>
 </head>
 <body>
     <h1 id="title">Hello World</h1>
 <button id="clickMe">Change Text</button>
+<button id="cme">Change Color</button>
 
 <script>
-    let btn = document.getElementById("clickMe")
-    btn.addEventListener("click", function(){
-        let title = document.getElementById("Title")
-        title.textContent = "text change bro"
+    
+    let tajuk = document.getElementById("title")
+   
+    let text = document.getElementById("clickMe")
+    text.addEventListener("click", function(){
+        tajuk.textContent = "text change bro"
+    })
+
+   
+    let kaler = document.getElementById("cme")
+    kaler.addEventListener("click", function(){
+        tajuk.style.color = 'teal'
+    })
+
+    tajuk.addEventListener("mouseenter", function(){
+        tajuk.style.color = 'red'
+    })
+
+    tajuk.addEventListener("mouseleave", function(){
+        tajuk.style.color = 'black'
     })
 
     
-    let prg = document.getElementById("paragraph")
+    
+    
+    // let prg = document.getElementById("paragraph")
 
 
 </script>
